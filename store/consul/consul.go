@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/docker/libkv/store"
+	"github.com/gonkulator/libkv/store"
 	api "github.com/hashicorp/consul/api"
 )
 

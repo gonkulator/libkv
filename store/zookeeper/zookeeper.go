@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/libkv/store"
+	"github.com/gonkulator/libkv/store"
 	zk "github.com/samuel/go-zookeeper/zk"
 )
 

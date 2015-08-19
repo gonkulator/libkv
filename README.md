@@ -14,6 +14,9 @@ You can also easily implement a generic *Leader Election* on top of it (see the 
 
 As of now, `libkv` offers support for `Consul`, `Etcd` and `Zookeeper`.
 
+This particular fork adds TLS Client support for the etcd backend.
+Consul and Zookeeper will be along shortly.
+
 ## Example of usage
 
 ### Create a new store and use Put/Get
@@ -25,8 +28,8 @@ import (
 	"fmt"
 	"time"
 	
-	"github.com/docker/libkv"
-	"github.com/docker/libkv/store"
+	"github.com/gonkulator/libkv"
+	"github.com/gonkulator/libkv/store"
 	log "github.com/Sirupsen/logrus"
 )
 

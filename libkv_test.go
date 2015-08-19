@@ -4,10 +4,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/docker/libkv/store"
-	"github.com/docker/libkv/store/consul"
-	"github.com/docker/libkv/store/etcd"
-	"github.com/docker/libkv/store/zookeeper"
+	"github.com/gonkulator/libkv/store"
+	"github.com/gonkulator/libkv/store/consul"
+	"github.com/gonkulator/libkv/store/etcd"
+	"github.com/gonkulator/libkv/store/zookeeper"
 	"github.com/stretchr/testify/assert"
 )
 

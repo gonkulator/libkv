@@ -20,8 +20,8 @@
 //     	"fmt"
 //     	"time"
 //
-//     	"github.com/docker/libkv"
-//     	"github.com/docker/libkv/store"
+//     	"github.com/gonkulator/libkv"
+//     	"github.com/gonkulator/libkv/store"
 //     	log "github.com/Sirupsen/logrus"
 //     )
 //
@@ -66,10 +66,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/docker/libkv/store"
-	"github.com/docker/libkv/store/consul"
-	"github.com/docker/libkv/store/etcd"
-	"github.com/docker/libkv/store/zookeeper"
+	"github.com/gonkulator/libkv/store"
+	"github.com/gonkulator/libkv/store/consul"
+	"github.com/gonkulator/libkv/store/etcd"
+	"github.com/gonkulator/libkv/store/zookeeper"
 )
 
 // Initialize creates a new Store object, initializing the client
