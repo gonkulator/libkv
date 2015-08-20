@@ -14,9 +14,6 @@ You can also easily implement a generic *Leader Election* on top of it (see the 
 
 As of now, `libkv` offers support for `Consul`, `Etcd` and `Zookeeper`.
 
-This particular fork adds TLS Client support for the etcd backend.
-Consul and Zookeeper will be along shortly.
-
 ## Example of usage
 
 ### Create a new store and use Put/Get
@@ -27,9 +24,9 @@ package main
 import (
 	"fmt"
 	"time"
-	
-	"github.com/gonkulator/libkv"
-	"github.com/gonkulator/libkv/store"
+
+	"github.com/docker/libkv"
+	"github.com/docker/libkv/store"
 	log "github.com/Sirupsen/logrus"
 )
 
@@ -64,6 +61,10 @@ func main() {
 ```
 
 You can find other usage examples for `libkv` under the `docker/swarm` or `docker/libnetwork` repositories.
+
+## TLS
+
+The etcd backend supports etcd servers that require TLS Client Authentication.  Zookeeper and Consul support are planned.  This feature is somewhat experimental and the store.ClientTLSConfig struct may change to accommodate the additional backends.
 
 ## Warning
 
