@@ -25,8 +25,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/docker/libkv"
-	"github.com/docker/libkv/store"
+	"github.com/gonkulator/libkv"
+	"github.com/gonkulator/libkv/store"
 	log "github.com/Sirupsen/logrus"
 )
 
